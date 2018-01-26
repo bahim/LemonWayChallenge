@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ChallengeWebService", "ChallengeWebService\", "{9513CB96-2DA5-4641-A418-635229E424B4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{3b0fdc80-f550-4006-9f61-a9966436f197}|ChallengeLib.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2299"
+		Debug.AspNetCompiler.PhysicalPath = "ChallengeWebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2299\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2299"
+		Release.AspNetCompiler.PhysicalPath = "ChallengeWebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2299\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2299"
+		SlnRelativePath = "ChallengeWebService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Test", "Challenge.Test\Challenge.Test.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeLib", "ChallengeLib\ChallengeLib.csproj", "{3B0FDC80-F550-4006-9F61-A9966436F197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeServiceConsumer", "ChallengeServiceConsumer\ChallengeServiceConsumer.csproj", "{6D7D99B5-941B-492F-9874-64B424A0043E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9513CB96-2DA5-4641-A418-635229E424B4} = {9513CB96-2DA5-4641-A418-635229E424B4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9513CB96-2DA5-4641-A418-635229E424B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9513CB96-2DA5-4641-A418-635229E424B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9513CB96-2DA5-4641-A418-635229E424B4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9513CB96-2DA5-4641-A418-635229E424B4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0FDC80-F550-4006-9F61-A9966436F197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0FDC80-F550-4006-9F61-A9966436F197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0FDC80-F550-4006-9F61-A9966436F197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0FDC80-F550-4006-9F61-A9966436F197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7D99B5-941B-492F-9874-64B424A0043E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7D99B5-941B-492F-9874-64B424A0043E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7D99B5-941B-492F-9874-64B424A0043E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7D99B5-941B-492F-9874-64B424A0043E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C5A69A8-3908-410D-BC4B-58D965C828F8}
+	EndGlobalSection
+EndGlobal
