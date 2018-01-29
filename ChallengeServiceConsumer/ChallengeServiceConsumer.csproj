@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FiboServiceConsumer.cs" />
+    <Compile Include="IServiceConsumer.cs" />
     <Compile Include="Connected Services\ChallengeServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

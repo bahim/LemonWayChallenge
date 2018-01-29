@@ -1,5 +1,9 @@
 ﻿using ChallengeLib;
 using NUnit.Framework;
+using System.Text.RegularExpressions;
+using System.IO;
+using System.Xml;
+using System;
 
 namespace Challenge.Test
 {
@@ -7,14 +11,34 @@ namespace Challenge.Test
     class XmlToJsonTest
     {
         [Test]
-        public void TestMethod()
+        public void ConvertXmlToJsonTest()
         {
-            //var converter = new XmlConverter();
-            //var expected = "<foo>bar</foo>";
+            // Arrange
+            var converter = new XmlConverter();
+            var given = "<foo>bar</foo>";
+            var expected = "{\"foo\":\"bar\"}";
 
-            //var result = converter.ConvertToJson("{ \"foo\": \"bar\" }");
+            // Act
+            var result = converter.ConvertToJson(given);
 
-            //Assert.AreEqual(expected, result);
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ExceptionWhenConvertMalformedXmlToJsonTest()
+        {
+            var converter = new XmlConverter();
+
+            Assert.Throws<XmlException>(() => converter.ConvertToJson("<foo>a</baz>"));
+        }
+
+        [Test]
+        public void ExceptionWhenFunctionArgIsNullTest()
+        {
+            var converter = new XmlConverter();
+
+            Assert.Throws<ArgumentNullException>(() => converter.ConvertToJson(null));
         }
     }
 }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ChallengeLib
 {
@@ -31,16 +28,7 @@ namespace ChallengeLib
                 tmp = prevFiboNbr;
                 prevFiboNbr = CurrentFiboNbr;
 
-                //try
-                //{
-                CurrentFiboNbr = /*checked(*/CurrentFiboNbr + tmp/*)*/;
-
-                //}
-                //catch (OverflowException exception)
-                //{
-                //    Console.Error.WriteLine(exception);
-                //    return -1;
-                //}
+                CurrentFiboNbr = /*checked(*/CurrentFiboNbr + tmp;/*); throw une exception en cas d'overflow */
             }
 
             return CurrentFiboNbr;

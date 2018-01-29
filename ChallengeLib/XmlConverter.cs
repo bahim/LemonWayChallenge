@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Xml;
 
 namespace ChallengeLib
@@ -11,6 +8,9 @@ namespace ChallengeLib
     {
         public string ConvertToJson(string xml)
         {
+            if (xml == null)
+                throw new ArgumentNullException();
+
             var doc = new XmlDocument();
             doc.LoadXml(xml);
 
