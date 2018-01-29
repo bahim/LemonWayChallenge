@@ -25,7 +25,6 @@ namespace ChallengeServiceConsumer
 
         static void Main(string[] args)
         {
-            
             fibonacciServiceConsumer();
         }
     }
