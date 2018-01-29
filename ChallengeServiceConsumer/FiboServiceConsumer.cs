@@ -16,7 +16,10 @@ namespace ChallengeServiceConsumer
                 var a = Console.ReadLine();
 
                 var isSuccess = int.TryParse(a, out nbr);
-                Console.WriteLine("Fibonacci number at position " + a + " is " + client.Fibonacci(nbr));
+                if (isSuccess)
+                    Console.WriteLine("Fibonacci number at position " + a + " is " + client.Fibonacci(nbr));
+                else
+                    Console.Write(a + "Is Not a valid number");
             }
         }
     }
